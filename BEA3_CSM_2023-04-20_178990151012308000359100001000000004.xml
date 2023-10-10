@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2023-04-20 06:31:35" timestamp="242133.007952" verdicts="2_basic" measurementid="b3496d06-fc59-454e-b7f4-270ab9b24dc7">
+  <testgroup>
+    <testcase starttime="2023-04-20 06:31:38" timestamp="242135.507952">
+      <verdict time="2023-04-20 06:31:38" timestamp="242135.507952" endtime="2023-04-20 06:31:38" endtimestamp="242135.507952" result="pass" />
+      <title>SetupDUT</title>
+      <ident>123</ident>
+      <miscinfo>
+        <title>TC_SetupDUT</title>
+        <info>
+          <name>PTC_Text</name>
+          <description>&quot;SetupDUT&quot;</description>
+        </info>
+        <info>
+          <name>PTC_ID</name>
+          <description>&quot;123&quot;</description>
+        </info>
+        <info>
+          <name>PTC_Category</name>
+          <description>EOL Test</description>
+        </info>
+      </miscinfo>
+      <miscinfo>
+        <title>DUT</title>
+        <info>
+          <name>HW_Major</name>
+          <description>7</description>
+        </info>
+        <info>
+          <name>HW_Minor</name>
+          <description>2</description>
+        </info>
+        <info>
+          <name>HW_Shunt</name>
+          <description>2</description>
+        </info>
+        <info>
+          <name>HW_Variant</name>
+          <description>3</description>
+        </info>
+      </miscinfo>
+    </testcase>
+    <testcase starttime="2023-04-20 06:31:38" timestamp="242135.507952">
+      <teststep timestamp="242135.707952" level="0" type="user" ident="" result="pass">Communication OK</teststep>
+      <verdict time="2023-04-20 06:31:38" timestamp="242135.507952" endtime="2023-04-20 06:31:38" endtimestamp="242135.707952" result="pass" />
+      <title>CheckDut</title>
+      <ident>1</ident>
+      <miscinfo>
+        <title>TC_CheckDut</title>
+        <info>
+          <name>PTC_Text</name>
+          <description>&quot;CheckDut&quot;</description>
+        </info>
+        <info>
+          <name>PTC_ID</name>
+          <description>&quot;1&quot;</description>
+        </info>
+        <info>
+          <name>PTC_Category</name>
+          <description>EOL Test</description>
+        </info>
+      </miscinfo>
+    </testcase>
+    <testcase starttime="2023-04-20 06:31:38" timestamp="242135.707952">
+      <teststep timestamp="242135.777952" type="user" ident="" result="na">Measured value: ID = DAAF0AB642C </teststep>
+      <teststep timestamp="242135.777952" level="0" type="user" ident="" result="pass">ID OK</teststep>
+      <measuredresults>
+        <measuredresult name="ID" value="DAAF0AB642C" type="string" unit=""/>
+      </measuredresults>
+      <verdict time="2023-04-20 06:31:38" timestamp="242135.707952" endtime="2023-04-20 06:31:38" endtimestamp="242135.777952" result="pass" />
+      <title>ReadAsicID</title>
+      <ident>423</ident>
+    </testcase>
+    <testgroup>
+      <testcase starttime="2023-04-20 06:31:38" timestamp="242135.777952">
+        <teststep timestamp="242135.807952" level="0" type="user" ident="" result="pass">TF_ReadBinary</teststep>
+        <comment timestamp="242135.807952">
+          <text>0x0000: 38 C0 12 C0  BE A7 B5 22\n0x0008: 4E E3 C0 30  A6 A2 07 00\n0x0010: 02 00 02 00  03 00 17 00\n0x0018: 03 00 E7 07  17 B0 46 20\n</text>
+        </comment>
+        <teststep timestamp="242135.807952" level="0" type="user" ident="" result="pass">TF_ReadBinaryFromFile</teststep>
+        <verdict time="2023-04-20 06:31:38" timestamp="242135.777952" endtime="2023-04-20 06:31:38" endtimestamp="242135.807952" result="pass" />
+        <title>ReadCalibrationData</title>
+        <ident>5</ident>
+        <miscinfo>
+          <title>Calibration Data</title>
+          <info>
+            <name>_R_Shunt_1_CAL</name>
+            <description>49208</description>
+          </info>
+          <info>
+            <name>_R_Shunt_2_CAL</name>
+            <description>49170</description>
+          </info>
+          <info>
+            <name>_R_Shunt_OBD_CAL</name>
+            <description>42942</description>
+          </info>
+          <info>
+            <name>_T_Shunt_1_CAL</name>
+            <description>8885</description>
+          </info>
+          <info>
+            <name>_T_Shunt_2_CAL</name>
+            <description>-7346</description>
+          </info>
+          <info>
+            <name>_VREF1P25</name>
+            <description>12480</description>
+          </info>
+          <info>
+            <name>_Factor_HV_Divider</name>
+            <description>41638</description>
+          </info>
+          <info>
+            <name>_HW_VER_MAJ</name>
+            <description>7</description>
+          </info>
+          <info>
+            <name>_HW_VER_MIN</name>
+            <description>2</description>
+          </info>
+          <info>
+            <name>_HW_VER_SHUNT</name>
+            <description>2</description>
+          </info>
+          <info>
+            <name>_HW_VER_VARIANT</name>
+            <description>3</description>
+          </info>
+          <info>
+            <name>_CAL_DAY</name>
+            <description>23</description>
+          </info>
+          <info>
+            <name>_CAL_MONTH</name>
+            <description>3</description>
+          </info>
+          <info>
+            <name>_CAL_YEAR</name>
+            <description>2023</description>
+          </info>
+          <info>
+            <name>_CRC32</name>
+            <description>397428256</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:38" timestamp="242136.457952">
+        <teststep timestamp="242137.807952" type="user" ident="" result="na">Measured value: I_REAL = 0.00333605 A</teststep>
+        <teststep timestamp="242137.847952" type="user" ident="" result="na">Measured value: _I_I1ACC = 0.00508034 A</teststep>
+        <teststep timestamp="242137.847952" type="user" ident="" result="na">Measured value: _I_I2ACC = 0.00203373 A</teststep>
+        <teststep timestamp="242137.847952" type="user" ident="" result="na">Measured value: _I_IOBDACC = 0 A</teststep>
+        <teststep timestamp="242137.847952" type="user" ident="" result="na">Measured value: _Temp1 = 27.1278 °C</teststep>
+        <teststep timestamp="242137.847952" type="user" ident="" result="na">Measured value: _Temp2 = 28.9968 °C</teststep>
+        <comment timestamp="242137.847952">
+          <text>I1ACC_RAW: -5</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>I2ACC_RAW: -2</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>IOBD_RAW: 0</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Target: 0A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [ABS]: 0.003336050946A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Floor: -1</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Value: 0.003336050946</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Roof: 1</text>
+        </comment>
+        <teststep timestamp="242137.847952" level="0" type="user" ident="" result="pass">Measured Value in Range [-1 &lt; 0.003336050946 &lt; 1][]</teststep>
+        <comment timestamp="242137.847952">
+          <text>Target: 0.003336050946A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [ABS]: 0.00174428793591947A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [%]: 52.28601014055%</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Floor: -0.026663949054</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Value: 0.00508033888191947</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Roof: 0.033336050946</text>
+        </comment>
+        <teststep timestamp="242137.847952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.026663949054 &lt; 0.00508033888191947 &lt; 0.033336050946][]</teststep>
+        <comment timestamp="242137.847952">
+          <text>Target: 0.003336050946A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [ABS]: 0.00130232184386403A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [%]: 39.0378284068335%</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Floor: -0.026663949054</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Value: 0.00203372910213597</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Roof: 0.033336050946</text>
+        </comment>
+        <teststep timestamp="242137.847952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.026663949054 &lt; 0.00203372910213597 &lt; 0.033336050946][]</teststep>
+        <comment timestamp="242137.847952">
+          <text>Target: 0.003336050946A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [ABS]: 0.003336050946A</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Deviation [%]: 100%</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Floor: -0.496663949054</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Value: 0</text>
+        </comment>
+        <comment timestamp="242137.847952">
+          <text>Roof: 0.503336050946</text>
+        </comment>
+        <teststep timestamp="242137.847952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.496663949054 &lt; 0 &lt; 0.503336050946][]</teststep>
+        <teststep timestamp="242137.847952" level="0" type="user" ident="" result="pass">Readings are ok [27.1277616524774 &lt;-&gt; 28.9967529181807 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="0.00333605" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="0.00508034" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="0.00203373" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="0" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.1278" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="28.9968" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:38" timestamp="242136.457952" endtime="2023-04-20 06:31:40" endtimestamp="242137.847952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 0A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:40" timestamp="242137.847952">
+        <teststep timestamp="242139.087952" type="user" ident="" result="na">Measured value: I_REAL = 250.587 A</teststep>
+        <teststep timestamp="242139.127952" type="user" ident="" result="na">Measured value: _I_I1ACC = 249.906 A</teststep>
+        <teststep timestamp="242139.127952" type="user" ident="" result="na">Measured value: _I_I2ACC = -250.014 A</teststep>
+        <teststep timestamp="242139.127952" type="user" ident="" result="na">Measured value: _I_IOBDACC = 249.167 A</teststep>
+        <teststep timestamp="242139.127952" type="user" ident="" result="na">Measured value: _Temp1 = 27.1096 °C</teststep>
+        <teststep timestamp="242139.127952" type="user" ident="" result="na">Measured value: _Temp2 = 29.0149 °C</teststep>
+        <comment timestamp="242139.127952">
+          <text>I1ACC_RAW: -245954</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>I2ACC_RAW: 245875</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>IOBD_RAW: 2140</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Target: 250A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [ABS]: 0.586884200000014A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [%]: 0.234753680000006%</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Floor: 247.5</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Value: 250.5868842</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Roof: 252.5</text>
+        </comment>
+        <teststep timestamp="242139.127952" level="0" type="user" ident="" result="pass">Measured Value in Range [247.5 &lt; 250.5868842 &lt; 252.5][]</teststep>
+        <comment timestamp="242139.127952">
+          <text>Target: 250.5868842A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [ABS]: 0.68063218379163A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [%]: 0.271615246729513%</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Floor: 249.8351235474</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Value: 249.906252016208</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Roof: 251.3386448526</text>
+        </comment>
+        <teststep timestamp="242139.127952" level="0" type="user" ident="" result="warn">Measured Value in lower end [249.5845366632 &lt; 249.906252016208 &lt; 251.5892317368][]</teststep>
+        <comment timestamp="242139.127952">
+          <text>Target: 250.5868842A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [ABS]: 0.572386676679741A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [%]: 0.228418449954829%</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Floor: 249.8351235474</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Value: 250.01449752332</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Roof: 251.3386448526</text>
+        </comment>
+        <teststep timestamp="242139.127952" level="0" type="user" ident="" result="warn">Measured Value in lower end [249.5845366632 &lt; 250.01449752332 &lt; 251.5892317368][]</teststep>
+        <comment timestamp="242139.127952">
+          <text>Target: 250.5868842A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [ABS]: 1.41990968220105A</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Deviation [%]: 0.566633679465755%</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Floor: 238.05753999</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Value: 249.166974517799</text>
+        </comment>
+        <comment timestamp="242139.127952">
+          <text>Roof: 263.11622841</text>
+        </comment>
+        <teststep timestamp="242139.127952" level="0" type="user" ident="" result="pass">Measured Value in Range [238.05753999 &lt; 249.166974517799 &lt; 263.11622841][]</teststep>
+        <teststep timestamp="242139.127952" level="0" type="user" ident="" result="pass">Readings are ok [27.1095661310453 &lt;-&gt; 29.0148597878312 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="250.587" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="249.906" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="-250.014" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="249.167" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.1096" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="29.0149" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:40" timestamp="242137.847952" endtime="2023-04-20 06:31:41" endtimestamp="242139.127952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 250A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:41" timestamp="242139.127952">
+        <teststep timestamp="242140.397952" type="user" ident="" result="na">Measured value: I_REAL = 501.097 A</teststep>
+        <teststep timestamp="242140.437952" type="user" ident="" result="na">Measured value: _I_I1ACC = 499.973 A</teststep>
+        <teststep timestamp="242140.437952" type="user" ident="" result="na">Measured value: _I_I2ACC = -500.155 A</teststep>
+        <teststep timestamp="242140.437952" type="user" ident="" result="na">Measured value: _I_IOBDACC = 498.795 A</teststep>
+        <teststep timestamp="242140.437952" type="user" ident="" result="na">Measured value: _Temp1 = 27.1096 °C</teststep>
+        <teststep timestamp="242140.437952" type="user" ident="" result="na">Measured value: _Temp2 = 29.155 °C</teststep>
+        <comment timestamp="242140.437952">
+          <text>I1ACC_RAW: -492066</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>I2ACC_RAW: 491879</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>IOBD_RAW: 4284</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Target: 500A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [ABS]: 1.09687180000003A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [%]: 0.219374360000006%</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Floor: 495</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Value: 501.0968718</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Roof: 505</text>
+        </comment>
+        <teststep timestamp="242140.437952" level="0" type="user" ident="" result="pass">Measured Value in Range [495 &lt; 501.0968718 &lt; 505][]</teststep>
+        <comment timestamp="242140.437952">
+          <text>Target: 501.0968718A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [ABS]: 1.12382885454019A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [%]: 0.2242737717566%</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Floor: 499.5935811846</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Value: 499.97304294546</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Roof: 502.6001624154</text>
+        </comment>
+        <teststep timestamp="242140.437952" level="0" type="user" ident="" result="warn">Measured Value in lower end [499.0924843128 &lt; 499.97304294546 &lt; 503.1012592872][]</teststep>
+        <comment timestamp="242140.437952">
+          <text>Target: 501.0968718A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [ABS]: 0.941817261719393A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [%]: 0.18795113574273%</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Floor: 499.5935811846</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Value: 500.155054538281</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Roof: 502.6001624154</text>
+        </comment>
+        <teststep timestamp="242140.437952" level="0" type="user" ident="" result="pass">Measured Value in Range [499.5935811846 &lt; 500.155054538281 &lt; 502.6001624154][]</teststep>
+        <comment timestamp="242140.437952">
+          <text>Target: 501.0968718A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [ABS]: 2.30193723673437A</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Deviation [%]: 0.459379686100522%</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Floor: 476.04202821</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Value: 498.794934563266</text>
+        </comment>
+        <comment timestamp="242140.437952">
+          <text>Roof: 526.15171539</text>
+        </comment>
+        <teststep timestamp="242140.437952" level="0" type="user" ident="" result="pass">Measured Value in Range [476.04202821 &lt; 498.794934563266 &lt; 526.15171539][]</teststep>
+        <teststep timestamp="242140.437952" level="0" type="user" ident="" result="pass">Readings are ok [27.1095661310453 &lt;-&gt; 29.1549721838225 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="501.097" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="499.973" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="-500.155" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="498.795" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.1096" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="29.155" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:41" timestamp="242139.127952" endtime="2023-04-20 06:31:42" endtimestamp="242140.437952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 500A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:43" timestamp="242141.087952">
+        <teststep timestamp="242142.437952" type="user" ident="" result="na">Measured value: I_REAL = 0.00341851 A</teststep>
+        <teststep timestamp="242142.477952" type="user" ident="" result="na">Measured value: _I_I1ACC = 0.00508025 A</teststep>
+        <teststep timestamp="242142.477952" type="user" ident="" result="na">Measured value: _I_I2ACC = -0.00813444 A</teststep>
+        <teststep timestamp="242142.477952" type="user" ident="" result="na">Measured value: _I_IOBDACC = 0 A</teststep>
+        <teststep timestamp="242142.477952" type="user" ident="" result="na">Measured value: _Temp1 = 27.3825 °C</teststep>
+        <teststep timestamp="242142.477952" type="user" ident="" result="na">Measured value: _Temp2 = 29.4379 °C</teststep>
+        <comment timestamp="242142.477952">
+          <text>I1ACC_RAW: -5</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>I2ACC_RAW: 8</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>IOBD_RAW: 0</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Target: 0A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [ABS]: 0.003418508844A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Floor: -1</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Value: 0.003418508844</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Roof: 1</text>
+        </comment>
+        <teststep timestamp="242142.477952" level="0" type="user" ident="" result="pass">Measured Value in Range [-1 &lt; 0.003418508844 &lt; 1][]</teststep>
+        <comment timestamp="242142.477952">
+          <text>Target: 0.003418508844A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [ABS]: 0.001661739501996A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [%]: 48.6100688290627%</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Floor: -0.026581491156</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Value: 0.005080248345996</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Roof: 0.033418508844</text>
+        </comment>
+        <teststep timestamp="242142.477952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.026581491156 &lt; 0.005080248345996 &lt; 0.033418508844][]</teststep>
+        <comment timestamp="242142.477952">
+          <text>Target: 0.003418508844A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [ABS]: 0.00471592633069285A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [%]: 137.952731611914%</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Floor: -0.026581491156</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Value: 0.00813443517469285</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Roof: 0.033418508844</text>
+        </comment>
+        <teststep timestamp="242142.477952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.026581491156 &lt; 0.00813443517469285 &lt; 0.033418508844][]</teststep>
+        <comment timestamp="242142.477952">
+          <text>Target: 0.003418508844A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [ABS]: 0.003418508844A</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Deviation [%]: 100%</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Floor: -0.496581491156</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Value: 0</text>
+        </comment>
+        <comment timestamp="242142.477952">
+          <text>Roof: 0.503418508844</text>
+        </comment>
+        <teststep timestamp="242142.477952" level="0" type="user" ident="" result="pass">Measured Value in Range [-0.496581491156 &lt; 0 &lt; 0.503418508844][]</teststep>
+        <teststep timestamp="242142.477952" level="0" type="user" ident="" result="pass">Readings are ok [27.3824766911437 &lt;-&gt; 29.4379458022633 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="0.00341851" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="0.00508025" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="-0.00813444" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="0" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.3825" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="29.4379" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:43" timestamp="242141.087952" endtime="2023-04-20 06:31:45" endtimestamp="242142.477952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 0A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:45" timestamp="242142.477952">
+        <teststep timestamp="242143.737952" type="user" ident="" result="na">Measured value: I_REAL = 250.567 A</teststep>
+        <teststep timestamp="242143.777952" type="user" ident="" result="na">Measured value: _I_I1ACC = -250.01 A</teststep>
+        <teststep timestamp="242143.777952" type="user" ident="" result="na">Measured value: _I_I2ACC = 250.089 A</teststep>
+        <teststep timestamp="242143.777952" type="user" ident="" result="na">Measured value: _I_IOBDACC = -249.148 A</teststep>
+        <teststep timestamp="242143.777952" type="user" ident="" result="na">Measured value: _Temp1 = 27.5826 °C</teststep>
+        <teststep timestamp="242143.777952" type="user" ident="" result="na">Measured value: _Temp2 = 29.659 °C</teststep>
+        <comment timestamp="242143.777952">
+          <text>I1ACC_RAW: 246064</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>I2ACC_RAW: -245960</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>IOBD_RAW: -2140</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Target: 250A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [ABS]: 0.567221599999982A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [%]: 0.226888639999993%</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Floor: 247.5</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Value: 250.5672216</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Roof: 252.5</text>
+        </comment>
+        <teststep timestamp="242143.777952" level="0" type="user" ident="" result="pass">Measured Value in Range [247.5 &lt; 250.5672216 &lt; 252.5][]</teststep>
+        <comment timestamp="242143.777952">
+          <text>Target: 250.5672216A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [ABS]: 0.557475947673794A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [%]: 0.22248558455253%</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Floor: 249.8155199352</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Value: 250.009745652326</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Roof: 251.3189232648</text>
+        </comment>
+        <teststep timestamp="242143.777952" level="0" type="user" ident="" result="warn">Measured Value in lower end [249.5649527136 &lt; 250.009745652326 &lt; 251.5694904864][]</teststep>
+        <comment timestamp="242143.777952">
+          <text>Target: 250.5672216A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [ABS]: 0.47804495353833A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [%]: 0.190785111670141%</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Floor: 249.8155199352</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Value: 250.089176646462</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Roof: 251.3189232648</text>
+        </comment>
+        <teststep timestamp="242143.777952" level="0" type="user" ident="" result="pass">Measured Value in Range [249.8155199352 &lt; 250.089176646462 &lt; 251.3189232648][]</teststep>
+        <comment timestamp="242143.777952">
+          <text>Target: 250.5672216A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [ABS]: 1.41915317399389A</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Deviation [%]: 0.566376226280465%</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Floor: 238.03886052</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Value: 249.148068426006</text>
+        </comment>
+        <comment timestamp="242143.777952">
+          <text>Roof: 263.09558268</text>
+        </comment>
+        <teststep timestamp="242143.777952" level="0" type="user" ident="" result="pass">Measured Value in Range [238.03886052 &lt; 249.148068426006 &lt; 263.09558268][]</teststep>
+        <teststep timestamp="242143.777952" level="0" type="user" ident="" result="pass">Readings are ok [27.5825807928288 &lt;-&gt; 29.6589945115281 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="250.567" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="-250.01" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="250.089" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="-249.148" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.5826" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="29.659" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:45" timestamp="242142.477952" endtime="2023-04-20 06:31:46" endtimestamp="242143.777952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 250A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:46" timestamp="242143.777952">
+        <teststep timestamp="242145.047952" type="user" ident="" result="na">Measured value: I_REAL = 501.082 A</teststep>
+        <teststep timestamp="242145.087952" type="user" ident="" result="na">Measured value: _I_I1ACC = -500.073 A</teststep>
+        <teststep timestamp="242145.087952" type="user" ident="" result="na">Measured value: _I_I2ACC = 500.261 A</teststep>
+        <teststep timestamp="242145.087952" type="user" ident="" result="na">Measured value: _I_IOBDACC = -500.497 A</teststep>
+        <teststep timestamp="242145.087952" type="user" ident="" result="na">Measured value: _Temp1 = 27.7645 °C</teststep>
+        <teststep timestamp="242145.087952" type="user" ident="" result="na">Measured value: _Temp2 = 29.8099 °C</teststep>
+        <comment timestamp="242145.087952">
+          <text>I1ACC_RAW: 492187</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>I2ACC_RAW: -492007</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>IOBD_RAW: -4299</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Target: 500A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [ABS]: 1.08210339999994A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [%]: 0.216420679999987%</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Floor: 495</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Value: 501.0821034</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Roof: 505</text>
+        </comment>
+        <teststep timestamp="242145.087952" level="0" type="user" ident="" result="pass">Measured Value in Range [495 &lt; 501.0821034 &lt; 505][]</teststep>
+        <comment timestamp="242145.087952">
+          <text>Target: 501.0821034A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [ABS]: 1.00902972686623A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [%]: 0.201370138749647%</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Floor: 499.5788570898</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Value: 500.073073673134</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Roof: 502.5853497102</text>
+        </comment>
+        <teststep timestamp="242145.087952" level="0" type="user" ident="" result="warn">Measured Value in lower end [499.0777749864 &lt; 500.073073673134 &lt; 503.0864318136][]</teststep>
+        <comment timestamp="242145.087952">
+          <text>Target: 501.0821034A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [ABS]: 0.820796635912359A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [%]: 0.163804819677852%</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Floor: 499.5788570898</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Value: 500.261306764088</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Roof: 502.5853497102</text>
+        </comment>
+        <teststep timestamp="242145.087952" level="0" type="user" ident="" result="pass">Measured Value in Range [499.5788570898 &lt; 500.261306764088 &lt; 502.5853497102][]</teststep>
+        <comment timestamp="242145.087952">
+          <text>Target: 501.0821034A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [ABS]: 0.585217341591658A</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Deviation [%]: 0.116790709071582%</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Floor: 476.02799823</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Value: 500.496886058408</text>
+        </comment>
+        <comment timestamp="242145.087952">
+          <text>Roof: 526.13620857</text>
+        </comment>
+        <teststep timestamp="242145.087952" level="0" type="user" ident="" result="pass">Measured Value in Range [476.02799823 &lt; 500.496886058408 &lt; 526.13620857][]</teststep>
+        <teststep timestamp="242145.087952" level="0" type="user" ident="" result="pass">Readings are ok [27.7644713669745 &lt;-&gt; 29.8099010697338 &lt; 10]</teststep>
+        <measuredresults>
+          <measuredresult name="I_REAL" value="501.082" type="float" unit="A"/>
+          <measuredresult name="_I_I1ACC" value="-500.073" type="float" unit="A"/>
+          <measuredresult name="_I_I2ACC" value="500.261" type="float" unit="A"/>
+          <measuredresult name="_I_IOBDACC" value="-500.497" type="float" unit="A"/>
+          <measuredresult name="_Temp1" value="27.7645" type="float" unit="°C"/>
+          <measuredresult name="_Temp2" value="29.8099" type="float" unit="°C"/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:46" timestamp="242143.777952" endtime="2023-04-20 06:31:47" endtimestamp="242145.087952" result="pass" />
+        <title>CurrentMeasurement</title>
+        <ident>15</ident>
+        <description>CurrentMeasurement @ 500A</description>
+        <miscinfo>
+          <title>TC_CurrentMeasurement</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;CurrentMeasurement&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;15&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:48" timestamp="242145.737952">
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _OC1R = 5 </teststep>
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _OC2R = 5 </teststep>
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _OC3R = 5 </teststep>
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _OC3MIN = -5 </teststep>
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _OC3MAX = 5 </teststep>
+        <teststep timestamp="242145.737952" type="user" ident="" result="na">Measured value: _REFR = 38 </teststep>
+        <measuredresults>
+          <measuredresult name="_OC1R" value="5" type="int" unit=""/>
+          <measuredresult name="_OC2R" value="5" type="int" unit=""/>
+          <measuredresult name="_OC3MAX" value="5" type="int" unit=""/>
+          <measuredresult name="_OC3MIN" value="-5" type="int" unit=""/>
+          <measuredresult name="_OC3R" value="5" type="int" unit=""/>
+          <measuredresult name="_REFR" value="38" type="int" unit=""/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:48" timestamp="242145.737952" endtime="2023-04-20 06:31:48" endtimestamp="242145.737952" result="pass" />
+        <title>OCRMax</title>
+        <ident>25</ident>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:48" timestamp="242145.737952">
+        <teststep timestamp="242146.687952" type="user" ident="" result="na">Measured value: _v40V = 39.9561 </teststep>
+        <comment timestamp="242146.687952">
+          <text>Target: 40V</text>
+        </comment>
+        <comment timestamp="242146.687952">
+          <text>Deviation [ABS]: 0.0438629149999983V</text>
+        </comment>
+        <comment timestamp="242146.687952">
+          <text>Deviation [%]: 0.109657287499996%</text>
+        </comment>
+        <comment timestamp="242146.687952">
+          <text>Floor: 39.6</text>
+        </comment>
+        <comment timestamp="242146.687952">
+          <text>Value: 39.956137085</text>
+        </comment>
+        <comment timestamp="242146.687952">
+          <text>Roof: 40.4</text>
+        </comment>
+        <teststep timestamp="242146.687952" level="0" type="user" ident="" result="pass">Measured Value in Range [39.6 &lt; 39.956137085 &lt; 40.4][]</teststep>
+        <measuredresults>
+          <measuredresult name="_v40V" value="39.9561" type="float" unit=""/>
+        </measuredresults>
+        <verdict time="2023-04-20 06:31:48" timestamp="242145.737952" endtime="2023-04-20 06:31:49" endtimestamp="242146.927952" result="pass" />
+        <title>HVMeasurement</title>
+        <ident>35</ident>
+      </testcase>
+      <testcase starttime="2023-04-20 06:31:49" timestamp="242146.927952">
+        <teststep timestamp="242147.127952" level="0" type="user" ident="" result="pass">PassThrough OK</teststep>
+        <verdict time="2023-04-20 06:31:49" timestamp="242146.927952" endtime="2023-04-20 06:31:49" endtimestamp="242147.127952" result="pass" />
+        <title>Passthrough</title>
+        <ident>215</ident>
+        <miscinfo>
+          <title>TC_Passthrough</title>
+          <info>
+            <name>PTC_Text</name>
+            <description>&quot;Passthrough&quot;</description>
+          </info>
+          <info>
+            <name>PTC_ID</name>
+            <description>&quot;215&quot;</description>
+          </info>
+          <info>
+            <name>PTC_Category</name>
+            <description>EOL Test</description>
+          </info>
+        </miscinfo>
+      </testcase>
+      <title>EOL</title>
+      <ident>2</ident>
+      <miscinfo>
+        <title>TG_EOL</title>
+        <info>
+          <name>PTC_Text</name>
+          <description>&quot;EOL&quot;</description>
+        </info>
+        <info>
+          <name>PTC_ID</name>
+          <description>&quot;2&quot;</description>
+        </info>
+        <info>
+          <name>PTC_Category</name>
+          <description>Heading</description>
+        </info>
+      </miscinfo>
+    </testgroup>
+    <title>Test Cases</title>
+    <ident>5091347</ident>
+    <miscinfo>
+      <title>TG_DUTTest</title>
+      <info>
+        <name>PTC_Text</name>
+        <description>&quot;Test Cases&quot;</description>
+      </info>
+      <info>
+        <name>PTC_ID</name>
+        <description>&quot;5091347&quot;</description>
+      </info>
+      <info>
+        <name>PTC_Category</name>
+        <description>Heading</description>
+      </info>
+    </miscinfo>
+  </testgroup>
+  <testcase starttime="2023-04-20 06:31:49" timestamp="242147.127952">
+    <teststep timestamp="242147.127952" level="0" type="user" ident="" result="pass">Passed</teststep>
+    <verdict time="2023-04-20 06:31:49" timestamp="242147.127952" endtime="2023-04-20 06:31:49" endtimestamp="242147.127952" result="pass" />
+    <title>Summary</title>
+    <miscinfo>
+      <title>Summary</title>
+      <info>
+        <name>_AsicID</name>
+        <description>DAAF0AB642C</description>
+      </info>
+      <info>
+        <name>_Result</name>
+        <description>True</description>
+      </info>
+      <info>
+        <name>_SampleSerialnumber</name>
+        <description>178990151012308000359100001000000004</description>
+      </info>
+      <info>
+        <name>HW_Major</name>
+        <description>7</description>
+      </info>
+      <info>
+        <name>HW_Minor</name>
+        <description>2</description>
+      </info>
+      <info>
+        <name>HW_Shunt</name>
+        <description>2</description>
+      </info>
+      <info>
+        <name>HW_Variant</name>
+        <description>3</description>
+      </info>
+      <info>
+        <name>_Flag</name>
+        <description>False</description>
+      </info>
+      <info>
+        <name>_Code</name>
+        <description>0</description>
+      </info>
+      <info>
+        <name>_Filename</name>
+        <description>C:\Report\Temp\DAAF0AB642C_Read_2023-04-20_06-31-38-3097.bin</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>49208</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>49170</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>42942</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>8885</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>-7346</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>12480</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>41638</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>7</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>2</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>2</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>3</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>23</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>3</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>2023</description>
+      </info>
+      <info>
+        <name>_Value</name>
+        <description>397428256</description>
+      </info>
+    </miscinfo>
+  </testcase>
+  <verdict time="2023-04-20 06:31:35" timestamp="242133.007952" endtime="2023-04-20 06:31:49" endtimestamp="242147.127952" result="pass" />
+  <title>CSM_DLL</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>HW-Testlabor</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.CAN /pex 16.0.145</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\D\DRX-Projects\P-BEA3\CSM\EOL\RB\_Working_RB\s_2204_dut.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database s_2204_dut on s_2204_dut</name>
+      <description>C:\D\DRX-Projects\P-BEA3\CSM\EOL\RB\_Working_RB\database\s_2204_dut.arxml (2023-03-13 15:08:52)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DutServer</name>
+      <description>Basic Diagnostic Description</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>CSM_DLL</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\D\DRX-Projects\P-BEA3\CSM\EOL\RB\_Working_RB\EOL\Automation\EOL_CSM.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2023-04-05, 14:34:42</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>C044286</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module J1939TestServiceLibraryNL</name>
+      <description>J1939 Test Service Library for CANoe, Version 16.0.145.0, c:\Program Files\Vector CANoe 16\Exec32\J1939TestServiceLibraryNL.dll</description>
+    </xinfo>
+  </testsetup>
+  <sut>
+    <info>
+      <name>SerialNumber</name>
+      <description>178990151012308000359100001000000004</description>
+    </info>
+  </sut>
+  <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1630</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>48275</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>20.30.16</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>20.30.14</description>
+      </xinfo>
+      </xinfoobject>
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>3</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1630</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>48275</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>20.30.16</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>20.30.14</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+</testmodule>
+<!--footprint="250e153fb11cf4e0490cc96eefd734d0" version="1"-->
